@@ -1,0 +1,28 @@
+.mask {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -35px;
+    margin-left: -46px;
+    z-index: 100;
+    transition: 1.6s;
+}
+
+.preloader {
+    width: 75px;
+    height: 75px;
+    border: 10px solid rgba(21, 219, 25, 0.6);
+    border-radius: 50%;
+    border-left-color: #8adc32;
+    animation: loader 1.3s linear infinite;
+}
+
+@keyframes loader {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.hide {
+    opacity: 0;
+}
